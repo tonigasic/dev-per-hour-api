@@ -1,0 +1,22 @@
+{
+  "name": "dev-per-hour-api",
+  "version": "1.0.0",
+  "description": "A API for dev-per-hour web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "REST",
+    "API"
+  ],
+  "author": "Toni Gasic",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
