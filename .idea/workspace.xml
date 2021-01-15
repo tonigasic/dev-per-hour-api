@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f1cb6b8-80bf-47c7-83bc-165bba84133d" name="Default Changelist" comment="" />
+    <list default="true" id="4f1cb6b8-80bf-47c7-83bc-165bba84133d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/controllers/testController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/models/testModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/routes/testRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +15,16 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1n77bJcvgYQPIrj6A4eKPKeImC5" />
   <component name="ProjectViewState">
@@ -30,7 +46,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610729344794</updated>
-      <workItem from="1610729345819" duration="176000" />
+      <workItem from="1610729345819" duration="567000" />
+      <workItem from="1610729919388" duration="502000" />
     </task>
     <servers />
   </component>
