@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-var routes = require('./api/routes/AuthenticationRoute'); //importing route
+var routes = require('./api/routes/Routes'); //importing route
 routes(app); //register the route
 
 app.listen(port);
@@ -22,7 +22,15 @@ console.log('dev-per-hour-api API server started on: ' + port);
 
 
 var connStr = process.env.MONGO_DB;
-mongoose.connect(connStr, function(err) {
-    if (err) throw err;
-    console.log('Successfully connected to MongoDB');
-});
+mongoose.connect(connStr,
+    {
+                useNewUrlParser: true,
+                useUnifiedTopology: true,
+                useFindAndModify: false,
+                useCreateIndex: true
+            },
+            function(err) {
+                if (err) throw err;
+                console.log('Successfully connected to MongoDB');
+            }
+);
