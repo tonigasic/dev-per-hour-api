@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f1cb6b8-80bf-47c7-83bc-165bba84133d" name="Default Changelist" comment="freelancer controllers created">
-      <change afterPath="$PROJECT_DIR$/api/controllers/Freelancer/CreateFreelancerController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/Freelancer/GetFreelancerController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controllers/Freelancer/UpdateFreelancerController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/FreelancersModel.js" afterDir="false" />
+    <list default="true" id="4f1cb6b8-80bf-47c7-83bc-165bba84133d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/AuthenticationController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/User/AuthenticationController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/controllers/User/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes/Routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes/Routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +78,7 @@
       <workItem from="1611833015116" duration="9666000" />
       <workItem from="1611952836282" duration="3056000" />
       <workItem from="1612036432420" duration="4161000" />
-      <workItem from="1612515181995" duration="3857000" />
+      <workItem from="1612515181995" duration="5040000" />
     </task>
     <task id="LOCAL-00001" summary="test setup">
       <created>1610730435134</created>
@@ -123,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611954029942</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="freelancer controllers created">
+      <created>1612519061418</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1612519061418</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,21 +134,23 @@
     <MESSAGE value="configured nodemon just for dev env" />
     <MESSAGE value="added cors to app" />
     <MESSAGE value="response fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="response fixed" />
+    <MESSAGE value="freelancer controllers created" />
+    <option name="LAST_COMMIT_MESSAGE" value="freelancer controllers created" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1612519030908">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1612519060646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612519030908" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612519060646" />
     <state x="585" y="88" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611954029567" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1612040595671">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1612040595671" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1611954030669">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612519062525">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1612519062525" />
     <state x="552" y="253" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1611954030669" />
     <state x="667" y="224" width="585" height="592" key="find.popup" timestamp="1611842120409">
       <screen x="0" y="0" width="1920" height="1040" />
