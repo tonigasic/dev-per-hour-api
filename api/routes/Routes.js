@@ -20,6 +20,9 @@ module.exports = function(app) {
     app.route('/freelancer/:id')
         .get(GetFreelancerController.getFreelancer);
 
+    app.route('/freelancer/user/:id')
+        .get(GetFreelancerController.getFreelancerByUserId);
+
     app.route('/freelancer/:id')
         .put(UpdateFreelancerController.updateFreelancer);
 };
