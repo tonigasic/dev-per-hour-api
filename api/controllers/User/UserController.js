@@ -1,4 +1,4 @@
-var Users = require('./../models/UserModel');
+var Users = require('../../models/UserModel');
 require('dotenv').config();
 var mongoose = require('mongoose');
 
