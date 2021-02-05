@@ -18,6 +18,6 @@ exports.updateFreelancer = function(req, res) {
             return res.status(404).send('The freelancer doesn\'t exist!');
         }
 
-        return res.status(200).json(body);
+        return res.status(200).json(freelancer);
     });
 };
