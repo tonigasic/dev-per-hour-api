@@ -13,7 +13,7 @@ exports.updateFreelancer = function(req, res) {
         return res.status(400).send('Please send a valid body');
     }
 
-    Freelancers.findByIdAndUpdate(freelancerId, body , {}, function(err, freelancer) {
+    Freelancers.findByIdAndUpdate({ _id: freelancerId }, body , {}, function(err, freelancer) {
         if (err || !freelancer) {
             return res.status(404).send('The freelancer doesn\'t exist!');
         }
