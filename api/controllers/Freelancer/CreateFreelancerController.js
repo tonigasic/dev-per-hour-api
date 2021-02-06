@@ -11,7 +11,6 @@ exports.createFreelancer = function(req, res) {
     let rating = req.body.rating;
     let phone = req.body.phone || null;
     let about = req.body.about || null;
-    let description = req.body.description || null;
     let skills = req.body.skills || [];
     let hobbys = req.body.hobbys || [];
     let address = req.body.address;
@@ -31,7 +30,6 @@ exports.createFreelancer = function(req, res) {
         rating: rating,
         phone: phone,
         about: about,
-        description: description,
         skills: skills,
         hobbys: hobbys,
         address: address

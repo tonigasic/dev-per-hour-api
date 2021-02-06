@@ -42,9 +42,6 @@ var FreelancersSchema = new Schema({
     about: {
         type: String
     },
-    description: {
-        type: String
-    },
     skills: {
         type: Array
     },
