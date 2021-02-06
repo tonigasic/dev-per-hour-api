@@ -14,6 +14,7 @@ exports.createFreelancer = function(req, res) {
     let skills = req.body.skills || [];
     let hobbys = req.body.hobbys || [];
     let address = req.body.address;
+    let price = req.body.price;
 
     let errorMessage = validateRequest(req.body);
 
@@ -32,7 +33,8 @@ exports.createFreelancer = function(req, res) {
         about: about,
         skills: skills,
         hobbys: hobbys,
-        address: address
+        address: address,
+        price: price
     };
 
     var FreelancersSchema = mongoose.model('Freelancers');
@@ -65,6 +67,9 @@ function validateRequest(body) {
     }
     if (!body.address) {
         return 'Please pass the address in the request body!'
+    }
+    if (!body.price) {
+        return 'Please pass the price in the request body!'
     }
 
     return null;
