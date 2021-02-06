@@ -34,6 +34,9 @@ var UsersSchema = new Schema({
     roles: {
         type: Array,
         required: true
+    },
+    saved_developers: {
+        type: Array
     }
 });
 

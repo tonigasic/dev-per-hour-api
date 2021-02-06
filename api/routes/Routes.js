@@ -2,6 +2,8 @@ module.exports = function(app) {
     var authenticationController = require('../controllers/User/AuthenticationController');
     var UserController = require('../controllers/User/UserController');
     var UserUpdateController = require('../controllers/User/UserUpdateController');
+    var UserSaveDeveloper = require('../controllers/User/UserSaveDeveloper');
+    var UserGetDevelopers = require('../controllers/User/UserGetDevelopers');
     var CreateFreelancerController = require('../controllers/Freelancer/CreateFreelancerController');
     var GetFreelancerController = require('../controllers/Freelancer/GetFreelancerController');
     var UpdateFreelancerController = require('../controllers/Freelancer/UpdateFreelancerController');
@@ -11,6 +13,12 @@ module.exports = function(app) {
 
     app.route('/user/:id')
         .put(UserUpdateController.updateUser);
+
+    app.route('/user/:id/developer')
+        .put(UserSaveDeveloper.saveDeveloperToUser);
+
+    app.route('/user/:id/developer')
+        .get(UserGetDevelopers.getSavedDevelopers);
 
     app.route('/authenticate')
         .post(authenticationController.authenticate);
