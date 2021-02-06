@@ -1,12 +1,16 @@
 module.exports = function(app) {
     var authenticationController = require('../controllers/User/AuthenticationController');
     var UserController = require('../controllers/User/UserController');
+    var UserUpdateController = require('../controllers/User/UserUpdateController');
     var CreateFreelancerController = require('../controllers/Freelancer/CreateFreelancerController');
     var GetFreelancerController = require('../controllers/Freelancer/GetFreelancerController');
     var UpdateFreelancerController = require('../controllers/Freelancer/UpdateFreelancerController');
 
     app.route('/user')
         .post(UserController.createUser);
+
+    app.route('/user/:id')
+        .put(UserUpdateController.updateUser);
 
     app.route('/authenticate')
         .post(authenticationController.authenticate);
