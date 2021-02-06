@@ -4,6 +4,7 @@ require('dotenv').config();
 exports.authenticate = function(req, res) {
     let email = req.body.email;
     let password = req.body.password;
+    let hashed = req.body.hashed;
 
     if (!email || ! password) {
         return res.status(400).send('Please pass email and password in the request body!');
@@ -15,7 +16,7 @@ exports.authenticate = function(req, res) {
         }
 
         // test a matching password
-        user.comparePassword(password, function(err, isMatch) {
+        user.comparePassword(password, hashed, function(err, isMatch) {
             if (!err && isMatch) {
                 res.setHeader('Content-Type', 'application/json');
                 return res.status(200).json(user);
