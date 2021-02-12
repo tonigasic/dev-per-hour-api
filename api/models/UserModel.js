@@ -37,6 +37,9 @@ var UsersSchema = new Schema({
     },
     saved_developers: {
         type: Array
+    },
+    saved_jobs: {
+        type: Array
     }
 });
 

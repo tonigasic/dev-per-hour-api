@@ -7,6 +7,9 @@ module.exports = function(app) {
     var CreateFreelancerController = require('../controllers/Freelancer/CreateFreelancerController');
     var GetFreelancerController = require('../controllers/Freelancer/GetFreelancerController');
     var UpdateFreelancerController = require('../controllers/Freelancer/UpdateFreelancerController');
+    var GetJobController = require('../controllers/Job/GetJobController');
+    var CreateJobController = require('../controllers/Job/CreateJobController');
+    var UpdateJobController = require('../controllers/Job/UpdateJobController');
 
     app.route('/user')
         .post(UserController.createUser);
@@ -37,4 +40,19 @@ module.exports = function(app) {
     
     app.route('/freelancer/user/:id')
         .get(GetFreelancerController.getFreelancerByUserId);
+
+    app.route('/job')
+        .post(CreateJobController.createJob);
+
+    app.route('/job')
+        .get(GetJobController.getJobsList);
+
+    app.route('/job/:id')
+        .get(GetJobController.getJob);
+
+    app.route('/job/user/:id')
+        .get(GetJobController.getJobByUserId);
+
+    app.route('/job/:id')
+        .put(UpdateJobController.updateJob);
 };
