@@ -11,10 +11,6 @@ var JobsSchema = new Schema({
         type: String,
         required: true
     },
-    price_type: {
-        type: String,
-        required: true
-    },
     price_low: {
         type: Number
     },

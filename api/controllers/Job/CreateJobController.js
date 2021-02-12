@@ -5,7 +5,6 @@ var mongoose = require('mongoose');
 exports.createJob = function(req, res) {
     let title = req.body.title;
     let userId = req.body.userId;
-    let priceType = req.body.priceType;
     let priceLow = req.body.priceLow || 0;
     let priceHigh = req.body.priceHigh || 0;
     let hoursLow = req.body.hoursLow || 0;
@@ -26,7 +25,6 @@ exports.createJob = function(req, res) {
     let jobData = {
         title: title,
         user_id: userId,
-        price_type: priceType,
         price_low: priceLow,
         price_high: priceHigh,
         hours_low: hoursLow,
@@ -57,9 +55,6 @@ function validateRequest(body) {
     }
     if (!body.userId) {
         return 'Please pass the user in the request body!'
-    }
-    if (!body.priceType) {
-        return 'Please pass the price type in the request body!'
     }
     if (!body.durationType) {
         return 'Please pass the duration type in the request body!'
