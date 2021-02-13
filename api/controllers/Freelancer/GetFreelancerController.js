@@ -33,7 +33,7 @@ exports.getFreelancerByUserId = function(req, res) {
     }
     let userId = req.params.id;
 
-    Freelancers.find({user_id: userId} , function(err, freelancer) {
+    Freelancers.findOne({user_id: userId} , function(err, freelancer) {
         if (err || !freelancer) {
             return res.status(404).send('The freelancer doesn\'t exist!');
         }

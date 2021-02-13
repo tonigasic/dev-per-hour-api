@@ -33,7 +33,7 @@ exports.getJobByUserId = function(req, res) {
     }
     let userId = req.params.id;
 
-    Jobs.findOne({user_id: userId} , function(err, job) {
+    Jobs.find({user_id: userId} , function(err, job) {
         if (err || !job) {
             return res.status(404).send('This job doesn\'t exist!');
         }
