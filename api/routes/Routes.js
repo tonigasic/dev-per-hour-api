@@ -12,6 +12,7 @@ module.exports = function(app) {
     var GetJobController = require('../controllers/Job/GetJobController');
     var CreateJobController = require('../controllers/Job/CreateJobController');
     var UpdateJobController = require('../controllers/Job/UpdateJobController');
+    var DeleteJobController = require('../controllers/Job/DeleteJobController');
 
     app.route('/user')
         .post(UserController.createUser);
@@ -57,6 +58,9 @@ module.exports = function(app) {
 
     app.route('/job/:id')
         .get(GetJobController.getJob);
+
+    app.route('/job/:id')
+        .delete(DeleteJobController.deleteJob);
 
     app.route('/job/user/:id')
         .get(GetJobController.getJobByUserId);
